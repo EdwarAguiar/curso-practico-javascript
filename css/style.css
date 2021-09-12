@@ -1,0 +1,429 @@
+:root{
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warn-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFF;
+}
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background-color: var(--grey);
+
+}
+
+.header-title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header-title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--bitcoin-orange);
+}
+
+.header-title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warn-black);
+}
+
+/* HASTA AQUI HEADER */
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--just-white);
+}
+
+/* <<< CUADRADO >>> */
+
+.main-cuadrado-container {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.cuadrado-frame-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 500px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: var(--off-white);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.cuadrado-frame-container .cuadrado--title {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.cuadrado-frame-container .cuadrado--subtitle {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.cuadrado-frame-container .cuadrado--pregunta {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+#inputCuadrado {
+    position: absolute;
+    width: 110px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    top: 150px;
+    left: calc(50% - 60px);
+}
+
+#cuadrado--perimetro {
+    position: absolute;
+    width: 192px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 4px 2px;
+    top: 350px;
+    left: calc(50% - 97px);
+}
+
+#cuadrado--area {
+    position: absolute;
+    width: 192px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 4px 2px;
+    top: 400px;
+    left: calc(50% - 97px);
+}
+
+/* --->>> CUADRADO <<<---*/
+
+/* <<< TRIANGULO >>> */
+
+.main-triangulo-container {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.triangulo-frame-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 500px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: var(--off-white);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.triangulo-frame-container .triangulo--title {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.triangulo-frame-container .triangulo--subtitle {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.triangulo-frame-container .triangulo--pregunta {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+#inputLado1 {
+    position: absolute;
+    width: 110px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    top: 150px;
+    left: calc(50% - 30px);
+}
+
+#inputLado2 {
+    position: absolute;
+    width: 110px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    top: 200px;
+    left: calc(50% - 30px);
+}
+
+#inputLadoBase {
+    position: absolute;
+    width: 110px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    top: 250px;
+    left: calc(50% - 30px);
+}
+
+#inputAltura {
+    position: absolute;
+    width: 110px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    top: 300px;
+    left: calc(50% - 30px);
+}
+
+#triangulo--perimetro {
+    position: absolute;
+    width: 192px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 4px 2px;
+    top: 375px;
+    left: calc(50% - 97px);
+}
+
+#triangulo--area {
+    position: absolute;
+    width: 192px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 4px 2px;
+    top: 425px;
+    left: calc(50% - 95px);
+}
+
+.triangulo-frame-container .label--inputLado1 {
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    top: 170px;
+    left: calc(50% - 110px);
+}
+
+.triangulo-frame-container .label--inputLado2 {
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    top: 220px;
+    left: calc(50% - 110px);
+}
+
+.triangulo-frame-container .label--inputLadoBase {
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    top: 270px;
+    left: calc(50% - 110px);
+}
+
+.triangulo-frame-container .label--inputAltura {
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    top: 320px;
+    left: calc(50% - 110px);
+}
+
+/* --->>> TRIANGULO <<<---*/
+
+/* <<< TRIANGULO >>> */
+
+.main-circulo-container {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.circulo-frame-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 500px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: var(--off-white);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.circulo-frame-container .circulo--title {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.circulo-frame-container .circulo--subtitle {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.cuadrado-frame-container .cuadrado--pregunta {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+#inputCirculo {
+    position: absolute;
+    width: 110px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    top: 150px;
+    left: calc(50% - 60px);
+}
+
+.circulo-frame-container .label--inputCirculo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+#circulo--perimetro {
+    position: absolute;
+    width: 192px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 4px 2px;
+    top: 350px;
+    left: calc(50% - 97px);
+}
+
+#circulo--area {
+    position: absolute;
+    width: 192px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 4px 2px;
+    top: 400px;
+    left: calc(50% - 97px);
+}
