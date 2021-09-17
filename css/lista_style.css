@@ -33,6 +33,7 @@ main {
     font-size: 2.9rem;
 }
 
+
 header {
     position: relative;
     display: flex;
@@ -40,15 +41,15 @@ header {
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 300px;
+    height: 200px;
     text-align: center;
 }
 
-#main-precios-container {
+#main-listas-container {
     width: 90%;
     min-width: 288px;
-    max-width: 400px;
-    height: 500px;
+    max-width: 500px;
+    height: 600px;
     margin: 5px auto;
     padding: 10px;
     background-color:white;
@@ -56,7 +57,7 @@ header {
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-#precios-lista--title {
+#listas--title {
     margin-top: 25px;
     font-size: 2.9rem;
     font-weight: bold;
@@ -66,31 +67,47 @@ header {
     margin-bottom: 25px;
 }
 
-#precios-lista--subtitle {
+#listas--parrafo1 {
     margin-top: 25px;
-    font-size: 1.9rem;
-    font-weight: bold;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     color: black;
-    text-align: center;
-    margin-bottom: 25px;
+    padding: 5px;
+    text-align: justify;
 }
 
-#preguntaPrecio {
+#listas--parrafo2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: black;
+    padding: 5px;
+    text-align: justify;
+}
+
+#listas--parrafo3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: black;
+    padding: 5px;
+    text-align: justify;
+}
+
+#preguntaLista {
     position: absolute;
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     line-height: 1.8rem;
     color:black;
     text-align: center;
     margin-bottom: 10px;
-    top: 445px;
-    left: calc(50% - 96px);
-    /* align-items: center; */
+    top: 500px;
+    left: calc(50% - 145px);
 }
 
-#InputPrice {
+#inputLista {
     position: absolute;
     margin-top: 25px;
     width: 100px;
@@ -99,61 +116,22 @@ header {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    top: 470px;
+    top: 530px;
     left: calc(50% - 50px);
 }
 
-#preguntaDescuento {
-    position: absolute;
-    margin-top: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color:black;
-    text-align: center;
-    margin-bottom: 10px;
-    top: 545px;
-    left: calc(50% - 83px);
-}
-
-#InputCoupon {
-    position: absolute;
-    margin-top: 25px;
-    width: 100px;
-    padding: 10px 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 4px;
-    top: 570px;
-    left: calc(50% - 50px);
-}
-
-#calcular {
+#promedio {
     position: absolute;
     width: 192px;
-    background-color: black;
+    background-color: var(--black);
     border-radius: 8px;
-    color:white;
+    color: white;
     padding: 10px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1.6rem;
     margin: 4px 2px;
-    top: 700px;
+    top: 725px;
     left: calc(50% - 97px);
-}
-
-#ResultP {
-    position: absolute;
-    margin-top: 10px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color:black;
-    text-align: center;
-    margin-bottom: 10px;
-    top: 640px;
-    left: calc(50% - 150px);
 }
