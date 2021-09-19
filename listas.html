@@ -15,21 +15,34 @@
     </header>
     <main>
         <section id="main-listas-container">
-            <h2 id="listas--title">Estad&iacute;sticas</h2>
-            <p id="listas--parrafo1">El <strong>promedio</strong>  es un número representativo que puede obtenerse a partir de una lista de cifras. Usualmente se relaciona con el concepto de media aritmética. Lo anterior quiere decir que normalmente el promedio es el resultado de sumar un grupo de número y dividirlo entre el número de sumandos</p>
-            <!-- <br> -->
-            <p id="listas--parrafo2">Si se ordenan todos los datos, de menor a mayor, la <strong>mediana</strong>  es el valor que ocupa la posición central. Si el número de datos es par, la <strong>mediana</strong>  es la media aritmética de los dos centrales. </p>
-            <!-- <br> -->
-            <p id="listas--parrafo3">La <strong>moda</strong> es el valor que más se repite o, lo que es lo mismo, el que tiene la mayor frecuencia.</p>
-            <br>
-
             <div id="estadisticas-container">
-                <form action="">
-                    <label id="preguntaLista" for="inputLista">Introduzca los elementos de la lista:</label> <br>
-                    <input id="inputLista" type="number">
-                    <button id="promedio" type="button" onclick="calcularPromedio()">promedio</button>
-                </form>
+                <h2 id="listas--title">Estad&iacute;sticas</h2>
+                <p id="listas--parrafo1">El <strong>promedio</strong>  es un número representativo que puede obtenerse a partir de una lista de cifras. Usualmente se relaciona con el concepto de media aritmética. Lo anterior quiere decir que normalmente el promedio es el resultado de sumar un grupo de número y dividirlo entre el número de sumandos</p>
+                <!-- <br> -->
+                <p id="listas--parrafo2">Si se ordenan todos los datos, de menor a mayor, la <strong>mediana</strong>  es el valor que ocupa la posición central. Si el número de datos es par, la <strong>mediana</strong>  es la media aritmética de los dos centrales. </p>
+                <!-- <br> -->
+                <p id="listas--parrafo3">La <strong>moda</strong> es el valor que más se repite o, lo que es lo mismo, el que tiene la mayor frecuencia.</p>
+                <br>
+
+                <div id="botones">
+                    <form action="">
+                        <label id="preguntaLista" for="inputLista">Introduzca los elementos de la lista:</label> <br>
+                        <input id="inputLista" type="number">
+                        <button id="agregar" type="button" onclick="agregarElemento()">Agregar</button>
+                        <button id="borrar" type="button" onclick="borrarLista()">Borrar Lista</button>
+                        <button id="ordenar" type="button" onclick="ordenarLista()">Ordenar Lista</button>
+                        <button id="promedio" type="button" onclick="cpromedio()">Promedio</button>
+                        <button id="mediana" type="button" onclick="cmediana()">Mediana</button>
+                        <button id="moda" type="button" onclick="cmoda()">Moda</button>
+                        </form>
+                    <div id="resultados">
+                        <p id="original"></p>
+                        <p id="ordenada"></p>
+                        <p id="mensaje"></p>
+                    </div>
+                </div>
             </div>
+
         </section>
     </main>
     <footer></footer>

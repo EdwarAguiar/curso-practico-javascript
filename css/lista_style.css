@@ -8,6 +8,7 @@
     --grey: #BABABA;
     --background: #FAF8F7;
     --just-white: #FFF;
+    --darkgrey:#666666;
 }
 
 
@@ -35,21 +36,23 @@ main {
 
 
 header {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 200px;
+    height: 150px;
     text-align: center;
 }
 
+/* AQUI COMIENZA */
+
 #main-listas-container {
+    position: relative;
     width: 90%;
     min-width: 288px;
-    max-width: 500px;
-    height: 600px;
+    max-width: 700px;
+    height: 700px;
     margin: 5px auto;
     padding: 10px;
     background-color:white;
@@ -103,7 +106,7 @@ header {
     color:black;
     text-align: center;
     margin-bottom: 10px;
-    top: 500px;
+    top: 10px;
     left: calc(50% - 145px);
 }
 
@@ -116,13 +119,65 @@ header {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    top: 530px;
+    top: 35px;
     left: calc(50% - 50px);
 }
 
+
+#agregar {
+    position: absolute;
+    width: 100px;
+    background-color: var(--darkgrey);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 4px 2px;
+    top: 100px;
+    left: 100px;
+}
+
+#borrar {
+    position: absolute;
+    width: 100px;
+    background-color: var(--darkgrey);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 4px 2px;
+    top: 100px;
+    left: 300px;
+}
+
+#ordenar {
+    position: absolute;
+    width: 100px;
+    background-color: var(--darkgrey);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 4px 2px;
+    top: 100px;
+    left: 500px;
+}
+
+
+/* BOTONES ESTADISTICA */
+
 #promedio {
     position: absolute;
-    width: 192px;
+    width: 120px;
     background-color: var(--black);
     border-radius: 8px;
     color: white;
@@ -132,6 +187,110 @@ header {
     display: inline-block;
     font-size: 1.6rem;
     margin: 4px 2px;
-    top: 725px;
-    left: calc(50% - 97px);
+    top: 380px;
+    left: 85px;
 }
+
+#mediana {
+    position: absolute;
+    width: 120px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 4px 2px;
+    top: 380px;
+    left: 290px;
+}
+
+#moda {
+    position: absolute;
+    width: 120px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 4px 2px;
+    top: 380px;
+    left: 495px;
+}
+
+/* RESULTADOS */
+
+#botones {
+    position: absolute;
+    width: 90%;
+    width: 680px;
+    max-width: 700px;
+    height: 360px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+/* CUADRO DE RESULTADOS */
+
+#resultados {
+    position: absolute;
+    width: 100%;
+    max-width: 640px;
+    height: 150px;
+    margin: 10px 10px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    top: 175px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#original {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:black;
+    text-align:left;
+    margin-bottom: 10px;
+    top: 415px;
+    left: 50px;
+    max-width: 700px;
+}
+
+#ordenada {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:black;
+    text-align:left;
+    margin-bottom: 10px;
+    top: 425px;
+    left: 50px;
+    max-width: 700px;
+}
+
+#mensaje {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:black;
+    text-align:left;
+    margin-bottom: 10px;
+    top: 425px;
+    left: 50px;
+    max-width: 700px;
+}
+
