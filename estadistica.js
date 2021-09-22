@@ -2,7 +2,6 @@ const ancho = screen.width
 const alto = screen.height
 
 var lista = [];
-//var mitadLista = 0;
 
 // Obtiene la mitad de la Lista
 mitadLista = parseInt(lista.length / 2);
@@ -94,6 +93,7 @@ function esPar(numerito) {
     }
   }
 
+// ***********************************************************************************
 // SE SOLICITA CALCULAR LA MEDIANA  
 function cmediana() {
     const rmediana = calcularMediana(lista);
@@ -126,3 +126,38 @@ function calcularMediana(lista) {
     
 return xmediana;    
 }
+// **************************************************************************************
+
+// ***********************************************************************************
+// SE SOLICITA CALCULAR LA MODA
+  function cmoda() {
+    const listaCount = {};
+
+    lista.map(
+        function (elemento) {
+            if (listaCount[elemento]) {
+                listaCount[elemento] += 1;
+            } else{
+                listaCount[elemento] = 1;
+            }
+        }
+    );
+
+    const listaArray = Object.entries(listaCount).sort(
+        function (valorAcumulado, nuevoValor) {
+            valorAcumulado - nuevoValor
+        }
+    );
+
+    const listaModa = Object.entries(listaCount).sort(
+        function (elementoA, elementoB){
+            return elementoA[1] - elementoB[1];
+        }
+    );
+    
+    const moda = listaModa[listaModa.length - 1];
+    const mostrarModa = document.getElementById("original");
+    mostrarModa.innerText = "La Moda es el Numero " + moda[0] + " que se repite " + moda[1] + " veces";
+
+  }
+  // **************************************************************************************
