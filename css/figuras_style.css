@@ -21,6 +21,7 @@ html {
     font-family: 'DM Sans', sans-serif;
 }
 
+
 header {
     position: relative;
     display: flex;
@@ -28,7 +29,7 @@ header {
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 334px;
+    height: 150px;
     text-align: center;
     background-color: var(--grey);
 
@@ -44,8 +45,9 @@ header {
     align-self: center;
 }
 
+
 .header-title-container h1 {
-    font-size: 2.4rem;
+    font-size: 5rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--bitcoin-orange);
@@ -53,15 +55,19 @@ header {
 
 .header-title-container p {
     margin-top: 25px;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--warn-black);
 }
 
+
+
 /* HASTA AQUI HEADER */
 
 main {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     background-color: var(--just-white);
@@ -70,16 +76,20 @@ main {
 /* <<< CUADRADO >>> */
 
 .main-cuadrado-container {
+    margin-top: 80px;
     position: relative;
     width: 100%;
     min-width: 320px;
     max-width: 500px;
     height: auto;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    display: flex;
+    margin-bottom: 100px;
 }
 
 
 .cuadrado-frame-container {
+
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -164,12 +174,13 @@ main {
 /* <<< TRIANGULO >>> */
 
 .main-triangulo-container {
+    margin-top: 80px;
     position: relative;
     width: 100%;
     min-width: 320px;
     max-width: 500px;
     height: auto;
-    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .triangulo-frame-container {
@@ -216,7 +227,7 @@ main {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    top: 150px;
+    top: 125px;
     left: calc(50% - 30px);
 }
 
@@ -228,7 +239,7 @@ main {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    top: 200px;
+    top: 175px;
     left: calc(50% - 30px);
 }
 
@@ -240,7 +251,7 @@ main {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    top: 250px;
+    top: 225px;
     left: calc(50% - 30px);
 }
 
@@ -252,7 +263,7 @@ main {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    top: 300px;
+    top: 275px;
     left: calc(50% - 30px);
 }
 
@@ -268,7 +279,7 @@ main {
     display: inline-block;
     font-size: 1.6rem;
     margin: 4px 2px;
-    top: 375px;
+    top: 380px;
     left: calc(50% - 97px);
 }
 
@@ -284,7 +295,7 @@ main {
     display: inline-block;
     font-size: 1.6rem;
     margin: 4px 2px;
-    top: 425px;
+    top: 430px;
     left: calc(50% - 95px);
 }
 
@@ -294,7 +305,7 @@ main {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
-    top: 170px;
+    top: 145px;
     left: calc(50% - 110px);
 }
 
@@ -304,7 +315,7 @@ main {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
-    top: 220px;
+    top: 195px;
     left: calc(50% - 110px);
 }
 
@@ -314,7 +325,7 @@ main {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
-    top: 270px;
+    top: 245px;
     left: calc(50% - 110px);
 }
 
@@ -324,7 +335,7 @@ main {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
-    top: 320px;
+    top: 295px;
     left: calc(50% - 110px);
 }
 
@@ -333,15 +344,17 @@ main {
 /* <<< TRIANGULO >>> */
 
 .main-circulo-container {
+    margin-top: 80px;
     position: relative;
     width: 100%;
     min-width: 320px;
     max-width: 500px;
     height: auto;
-    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .circulo-frame-container {
+    position: relative;
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -354,23 +367,29 @@ main {
 }
 
 .circulo-frame-container .circulo--title {
+    position: absolute;
     margin-bottom: 25px;
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
     text-align: center;
+    left: calc(50% - 56px);
 }
 
 .circulo-frame-container .circulo--subtitle {
+    position: absolute;
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--black);
+    top: 60px;
+    left: calc(50% - 164px);
 }
 
 .cuadrado-frame-container .cuadrado--pregunta {
+    position: absolute;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.8rem;
@@ -390,10 +409,13 @@ main {
 }
 
 .circulo-frame-container .label--inputCirculo {
+    position: absolute;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+    top: 130px;
+    left: calc(50% - 125px);
 }
 
 #circulo--perimetro {
@@ -426,4 +448,49 @@ main {
     margin: 4px 2px;
     top: 400px;
     left: calc(50% - 97px);
+}
+
+#RCuadrado {
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: bold;
+    top: 300px;
+    left: calc(50% - 125px);
+}
+
+#RTriangulo {
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: bold;
+    top: 340px;
+    left: calc(50% - 124px);
+}
+
+#RCirculo {
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: bold;
+    top: 300px;
+    left: calc(50% - 162px);
+}
+
+/* **** FOOTER **** */
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: #E7F5FF;
+    background-color: black;
+}
+
+footer h2 {
+    font-size: 2rem;
+}
+
+footer h3 {
+    font-size: 1.5rem;
 }

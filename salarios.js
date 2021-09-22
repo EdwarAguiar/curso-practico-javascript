@@ -1,164 +1,44 @@
-const  venezuela = [];
+const personal = [];
 
-venezuela.push({
-    name: "Edwar J",
-    lastname: "Aguiar",
-    sexo: "Masculino",
-    salary: 1000,
+personal.push({ IDEmpleado: 1000, Nombre: "Edwar J", Apellido: "Aguiar", Sexo: "Masculino", Cargo: "Director Operaciones", Departamento: "Gerencia Operaciones", Salario: 3575});
+personal.push({ IDEmpleado: 1001, Nombre: "Barbara C", Apellido: "Alfonzo", Sexo: "Femenino", Cargo: "Director Administracion", Departamento: "Gerencia Operaciones", Salario: 3575});
+personal.push({ IDEmpleado: 1002, Nombre: "Carlos M", Apellido: "Aguiar", Sexo: "Masculino", Cargo: "Pasante Sub-Pagado",  Departamento: "Informatica", Salario: 1000});
+personal.push({ IDEmpleado: 1003, Nombre: "Carlos A", Apellido: "Nieves", Sexo: "Masculino", Cargo: "Gerente Soporte Tecnico",  Departamento: "Informatica", Salario: 3250});
+personal.push({ IDEmpleado: 1004, Nombre: "Ana Mayela", Apellido: "Alfonzo", Sexo: "Femenino", Cargo: "Gerente Administracion",  Departamento: "Administracion", Salario: 3100});
+personal.push({ IDEmpleado: 1005, Nombre: "Mariangel G", Apellido: "Nieves", Sexo: "Femenino", Cargo: "Gerente Recursos Humanos",  Departamento: "Administracion", Salario: 3000});
+personal.push({ IDEmpleado: 1006, Nombre: "Nelson", Apellido: "Medina", Sexo: "Masculino", Cargo: "Jefe Implementaciones",  Departamento: "Informatica", Salario: 2800});
+personal.push({ IDEmpleado: 1007, Nombre: "Juan C", Apellido: "Leon", Sexo: "Masculino", Cargo: "Asesor Administracion",  Departamento: "Administracion", Salario: 2800});
+personal.push({ IDEmpleado: 1008, Nombre: "Luis A", Apellido: "Aguiar", Sexo: "Masculino", Cargo: "Asesor Recreativo",  Departamento: "Administracion", Salario: 2800});
+personal.push({ IDEmpleado: 1009, Nombre: "JeanPierre", Apellido: "Blancacho", Sexo: "Masculino", Cargo: "Diseñador Grafico",  Departamento: "Informatica", Salario: 2500});
+personal.push({ IDEmpleado: 1010, Nombre: "Jordy", Apellido: "Medina", Sexo: "Masculino", Cargo: "Tecnico Instalador",  Departamento: "Operaciones", Salario: 2100});
+personal.push({ IDEmpleado: 1011, Nombre: "Daniel", Apellido: "Pachano", Sexo: "Masculino", Cargo: "Ingeniero Instalador",  Departamento: "Operaciones", Salario: 3000});
+personal.push({ IDEmpleado: 1012, Nombre: "Ramon Alberto", Apellido: "Aguiar", Sexo: "Masculino", Cargo: "Tecnico Instalador",  Departamento: "Operaciones", Salario: 2500});
 
-});
 
-venezuela.push({
-    name: "Barbara C",
-    lastname: "Alfonzo",
-    sexo: "Femenino",
-    salary: 1500,
-});
-
-venezuela.push({
-    name: "Carlos M",
-    lastname: "Aguiar",
-    sexo: "Masculino",
-    salary: 1900,
-});
-
-venezuela.push({
-    name: "Carlos A",
-    lastname: "Nieves",
-    sexo: "Masculino",
-    salary: 2050,
-});
-
-venezuela.push({
-    name: "Manuel F",
-    lastname: "Alfonzo",
-    sexo: "Masculino",
-    salary: 5100,
-});
-
-venezuela.push({
-    name: "Ramon A",
-    lastname: "Aguiar",
-    sexo: "Masculino",
-    salary: 950,
-});
-
-venezuela.push({
-    name: "Luis A",
-    lastname: "Aguiar",
-    sexo: "Masculino",
-    salary: 1650,
-});
-
-venezuela.push({
-    name: "Carmen D",
-    lastname: "Aguiar",
-    sexo: "Femenino",
-    salary: 1280,
-});
-
-venezuela.push({
-    name: "LuzMarina",
-    lastname: "Arias",
-    sexo: "Femenino",
-    salary: 1890,
-});
-
-venezuela.push({
-    name: "Dioscelis D",
-    lastname: "Teran",
-    sexo: "Femenino",
-    salary: 650,
-});
-
-venezuela.push({
-    name: "Juan C",
-    lastname: "Leon",
-    sexo: "Masculino",
-    salary: 3180,
-});
-
-venezuela.push({
-    name: "Mayra",
-    lastname: "Diaz",
-    sexo: "Femenino",
-    salary: 2950,
-});
-
-venezuela.push({
-    name: "Ana M",
-    lastname: "Alfonzo",
-    sexo: "Femenino",
-    salary: 4300,
-});
-
-venezuela.push({
-    name: "Ana C",
-    lastname: "Flores",
-    sexo: "Femenino",
-    salary: 890,
-});
-
-venezuela.push({
-    name: "Elio F",
-    lastname: "Farfan",
-    sexo: "Masculino",
-    salary: 4600,
-
-});
-
-venezuela.push({
-    name: "Fremiot B",
-    lastname: "Bello",
-    sexo: "Masculino",
-    salary: 3750,
-});
-
-venezuela.push({
-    name: "Dalia C",
-    lastname: "Blancacho",
-    sexo: "Femenino",
-    salary: 4500,
-});
-
-venezuela.push({
-    name: "JeanPierre B",
-    lastname: "Blancacho",
-    sexo: "Masculino",
-    salary: 3050,
-
-});
-
-venezuela.push({
-    name: "Nelson M",
-    lastname: "Medina",
-    sexo: "Masculino",
-    salary: 3000,
-});
-
-venezuela.push({
-    name: "Daniel P",
-    lastname: "Pachano",
-    sexo: "Masculino",
-    salary: 3900,
-
-});
-
-// Crea la Tabla en HTML
-
-createTable(venezuela);
-
-function createTable(data){
-    var table = document.getElementById('personalTable');
-
-    for (var i=0; i < data.length; i++){
-      var row = `<tr>
-                      <td>${data[i].name}</td>
-                      <td>${data[i].lastname}</td>
-                      <td>${data[i].sexo}</td>    
-                      <td>${data[i].salary}</td>                          
-                 </tr>`
-      table.innerHTML + row
+function generateTableHead(table, data) {
+    let thead = table.createTHead();
+    let row = thead.insertRow();
+    for (let key of data) {
+      let th = document.createElement("th");
+      let text = document.createTextNode(key);
+      th.appendChild(text);
+      row.appendChild(th);
     }
+  }
+  
+  let table = document.querySelector("table");
+  let data = Object.keys(personal[0]);
+  generateTableHead(table, data);
 
-}
+  function generateTable(table, data) {
+    for (let element of data) {
+      let row = table.insertRow();
+      for (key in element) {
+        let cell = row.insertCell();
+        let text = document.createTextNode(element[key]);
+        cell.appendChild(text);
+      }
+    }
+  }
+
+  generateTable(table, personal);

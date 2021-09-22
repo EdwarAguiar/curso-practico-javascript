@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/figuras_style.css">
     
     <title>Figuras Geom&eacute;tricas</title>
 </head>
@@ -29,6 +29,7 @@
                     <button id="cuadrado--perimetro" type="button" onclick="calcularPerimetroCuadrado()">Calcular el per&iacute;metro</button><br>
                     <button id="cuadrado--area" type="button" onclick="calcularAreaCuadrado()">Calcular el &aacute;rea</button>
                 </form>
+                <p id="RCuadrado"></p>
             </div>
         </section>
     
@@ -50,6 +51,7 @@
                     <button id="triangulo--perimetro" type="button" onclick="calcularPerimetroTriangulo()">Calcular el per&iacute;metro</button>
                     <button id="triangulo--area" type="button" onclick="calcularAreaTriangulo()">Calcular el &aacute;rea</button>
                 </form>
+                <p id="RTriangulo"></p>
             </div>
  
         </section>
@@ -59,16 +61,20 @@
                 <span class="circulo--logo"></span>
                 <h2 class="circulo--title">CIRCULO</h2>
                 <h2 class="circulo--subtitle" >Calcula el &aacute;rea y per&iacute;metro de un C&iacute;rculo</h2>
-                <label class="label--inputCirculo" for="inputCirculo">Introduce cuanto mide el radio de tu C&iacute;rculo:</label>
-                <input id="inputCirculo" type="number"><br>
-                <button id="circulo--perimetro" type="button" onclick="calcularPerimetroCirculo()">Calcular el per&iacute;metro</button>
-                <button id="circulo--area" type="button" onclick="calcularAreaCirculo()">Calcular el &aacute;rea</button>
+                <form action="">
+                    <label class="label--inputCirculo" for="inputCirculo">Introduce cuanto mide el radio de tu C&iacute;rculo:</label>
+                    <input id="inputCirculo" type="number"><br>
+                    <button id="circulo--perimetro" type="button" onclick="calcularPerimetroCirculo()">Calcular el per&iacute;metro</button>
+                    <button id="circulo--area" type="button" onclick="calcularAreaCirculo()">Calcular el &aacute;rea</button>
+                </form>
+                <p id="RCirculo"></p>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <h3>1er Taller</h3>
+        <h2>Curso Practico JavaScript</h2>
     </footer>
 
     <script src="./figuras.js"></script>

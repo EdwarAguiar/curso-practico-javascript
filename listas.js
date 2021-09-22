@@ -86,19 +86,6 @@ function calcularPromedio(lista) {
 // END -->> CALCULANDO PROMEDIO
 
 
-// CALCULANDO MEDIANA
-// Funciones de Soporte
-//function calcularMediaAritmetica(xlista) {
-//    const sumaLista = xlista.reduce(
-//        function (valorAcumulado = 0, nuevoELemento) {
-//            return valorAcumulado + nuevoELemento;
-//        }
-//    );
-//
-//    const promedioLista = sumaLista / xlista.length;
-//    return promedioLista;
-//}
-
 function esPar(numerito) {
     if (numerito % 2 === 0) {
       return true;

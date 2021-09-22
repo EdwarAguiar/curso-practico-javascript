@@ -108,7 +108,7 @@ body, html {
     width: 90%;
     min-width: 288px;
     max-width: 1200px;
-    height: 500px;
+    height: auto;
     margin: 5px auto;
     padding: 10px;
     background-color:white;
@@ -116,30 +116,43 @@ body, html {
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
+
+footer {
+    background: black;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
 /* Estilo para la Tabla */
 
-.table {
+table {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-collapse: collapse;
     font-family: 'Quicksand', sans-serif;
     overflow: hidden;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-,table thead th {
+table thead th {
     background: #009578;
     color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
-.table td,
-.table th {
-    padding: 10px 20px;
+table td,
+table th {
+    padding: 10px 15px;
+    font-size: 1.4rem;
 }
 
-.table tbody tr:nth-of-type(even){
+table tbody td:nth-of-type(even){
     background: #eeeeee;
 }
 
-.table tbody tr:last-of-type {
+table tbody td:last-of-type {
     border-bottom: 2px solid #009578;
 }

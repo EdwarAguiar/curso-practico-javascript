@@ -6,9 +6,6 @@ let mountains = [
     { name: "Monte Amiata", height: 1738, place: "Siena" }
   ];
 
-
-
-
 function generateTableHead(table, data) {
     let thead = table.createTHead();
     let row = thead.insertRow();
