@@ -1,6 +1,6 @@
-const salariosVen = venezuela.map(
+const salariosVen = salarios.map(
     function (persona){
-        return persona.salary;
+        return persona.Salario;
     }
 );
 
@@ -61,6 +61,11 @@ const salariosVenTop10 = salariosVenSorted.splice(
 
 const medianaTop10Ven = medianaSalarios(salariosVenTop10);
 
+const resultadomg = document.getElementById("medianaGeneral");
+resultadomg.innerText = medianaGeneralVen;
+
+const resultadomt10 = document.getElementById("medianaTop10");
+resultadomt10.innerText = medianaTop10Ven;
 
 console.log({
     medianaGeneralVen,

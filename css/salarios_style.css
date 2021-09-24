@@ -73,19 +73,21 @@ body, html {
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
     color: black;
-    display: none;
+    display: flex;
+    justify-content: space-around;
     padding: 100px 20px;
     height: 100%;
+    width: 100%;
   }
 
-#Home {background-color: var(--light-grey);}
-#News {background-color:var(--soft-blue);}
-#Contact {background-color: var(--soft-orange);}
-#About {background-color: var(--light-grey);}
+#Inicio {background-color: var(--light-grey);}
+#Analisis {background-color:var(--soft-blue);}
+#Taller {background-color: var(--soft-orange);}
+#SobreJS {background-color: var(--secondary-blue);}
 
 /* ****************************************************************************************** */
-
-#home-title {
+/* ------>> ESTILO TAB INICIO  <<----- */
+#Inicio-title {
     /* margin-top: 20px; */
     font-size: 2.9rem;
     font-weight: bold;
@@ -95,7 +97,7 @@ body, html {
     margin-bottom: 25px;
 }
 
-#home-subtitle {
+#Inicio-subtitle {
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.8rem;
@@ -104,7 +106,7 @@ body, html {
     margin-bottom: 25px;
 }
 
-#home-grid {
+#Inicio-grid {
     width: 90%;
     min-width: 288px;
     max-width: 1200px;
@@ -115,6 +117,8 @@ body, html {
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
+
+/* ------>> FINALIZA TAB INICIO  <<----- */
 
 
 footer {
@@ -156,3 +160,100 @@ table tbody td:nth-of-type(even){
 table tbody td:last-of-type {
     border-bottom: 2px solid #009578;
 }
+
+/* ESTILO TAB ANALISIS */
+
+#Analisis {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: var(--just-white);
+}
+
+#analisis-body {
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+#Analisis #a-title {
+    padding-top: 5px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+    text-align: center;
+}
+
+#Analisis #a-parrafo {
+    padding-top: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+    text-align: center;
+}
+
+
+#mediana-general-container, #mediana-top10-container, #mujeres-container, #hombres-container {
+    margin-top: 50px;
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 100px;
+}
+
+#mg-container--title, #mt10-container--title, #mujeres--title, #hombres--title {
+    width: 100%;
+    height: 25%;
+    color: white;
+    background-color: var(--black);
+    border-radius: 8px;
+}
+
+#mg-container--body, #mt10-container--body, #mujeres--body, #hombres--body {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+
+#mg-title, #mt10-title, #tituloMujeres, #tituloHombres{
+padding-top: 18px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: white;
+    text-align: center;
+}
+
+#mg-body, #mt10-body, #totalMujeres, #totalHombres {
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:black;
+    text-align: center;
+}
+
+#medianaGeneral, #medianaTop10 {
+    padding-top: 30px;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:black;
+    text-align: center;
+}
+
+
+
+
+/* FINALIZA ESTILO TAB ANALISIS */

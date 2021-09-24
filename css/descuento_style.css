@@ -40,11 +40,14 @@ header {
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 300px;
+    height: 150px;
     text-align: center;
+    margin-bottom: 100px;
+    background-color: var(--secondary-blue);
 }
 
 #main-precios-container {
+    position: relative;
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -85,7 +88,7 @@ header {
     color:black;
     text-align: center;
     margin-bottom: 10px;
-    top: 445px;
+    top: 150px;
     left: calc(50% - 96px);
     /* align-items: center; */
 }
@@ -99,7 +102,7 @@ header {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    top: 470px;
+    top: 175px;
     left: calc(50% - 50px);
 }
 
@@ -112,7 +115,7 @@ header {
     color:black;
     text-align: center;
     margin-bottom: 10px;
-    top: 545px;
+    top: 250px;
     left: calc(50% - 83px);
 }
 
@@ -125,7 +128,7 @@ header {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    top: 570px;
+    top: 275px;
     left: calc(50% - 50px);
 }
 
@@ -141,7 +144,7 @@ header {
     display: inline-block;
     font-size: 1.6rem;
     margin: 4px 2px;
-    top: 700px;
+    top: 425px;
     left: calc(50% - 97px);
 }
 
@@ -154,6 +157,20 @@ header {
     color:black;
     text-align: center;
     margin-bottom: 10px;
-    top: 640px;
+    top: 370px;
     left: calc(50% - 150px);
+}
+
+footer {
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    background-color: var(--black);
 }

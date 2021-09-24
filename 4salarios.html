@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/salarios_style.css">
+    <title>Salarios</title>
+</head>
+<body>
+    <header>
+        <h1>TIRAMUTO Automotive</h1>
+        <p>Aplicaci&oacute;n de An&aacute;lisis de Salarios</p>
+    </header>
+    <main>
+        <section id="main-salarios-container">          
+            <button class="tablink" onclick="openPage('Inicio', this, 'grey')" id="defaultOpen">Inicio</button>
+            <button class="tablink" onclick="openPage('Analisis', this, 'grey')">Analisis</button>
+            <button class="tablink" onclick="openPage('Taller', this, 'grey')">4to Taller</button>
+            <button class="tablink" onclick="openPage('SobreJS', this, 'grey')">Sobre JavaScript</button>
+
+            <div id="Inicio" class="tabcontent">
+                <h3 id="Inicio-title">Personal Activo</h3>
+                <p id="Inicio-subtitle">Listado de Personal activo del Departamento de Operaciones</p>
+                <div id="Inicio-grid">
+                    <table>
+
+                    </table>
+                </div>
+            </div>
+
+            <div id="Analisis" class="tabcontent">
+                <div id="analisis-header">
+                    <h3 id="a-title">Analisis Salarial</h3>
+                    <p id="a-parrafo">Aqui texto complementario del Analisis Estadistico</p>
+                </div>
+                <div id="analisis-body">
+                    <div id="mujeres-container">
+                        <div id="mujeres--title" >
+                            <h3 id="tituloMujeres">Mujeres</h3>
+                        </div>
+                        <div id="mujeres--body">
+                            <p id="totalMujeres"> Total Mujeres:</p>
+                            <p id="numeroMujeres">X</p>
+                        </div>
+                    </div>
+                    <div id="hombres-container">
+                        <div id="hombres--title" >
+                            <h3 id="tituloHombres">Hombres</h3>
+                        </div>
+                        <div id="hombres--body">
+                            <p id="totalHombres"> Total Hombres:</p>
+                            <p id="numeroHombres">X</p>
+                        </div>
+                    </div>
+                    <div id="mediana-general-container">
+                        <div id="mg-container--title" >
+                            <h3 id="mg-title">Mediana General</h3>
+                        </div>
+                        <div id="mg-container--body">
+                            <p id="mg-body"> Total $:</p>
+                            <p id="medianaGeneral">X</p>
+                        </div>
+                    </div>
+                    <div id="mediana-top10-container">
+                        <div id="mt10-container--title" >
+                            <h3 id="mt10-title">Mediana Top 10%</h3>
+                        </div>
+                        <div id="mt10-container--body">
+                            <p id="mt10-body"> Total $:</p>
+                            <p id="medianaTop10">X</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+            <div id="Taller" class="tabcontent">
+                <h3>Contact</h3>
+                <p>Get in touch, or swing by for a cup of coffee.</p>
+            </div>
+
+            <div id="SobreJS" class="tabcontent">
+                <h3>About</h3>
+                <p>Who we are and what we do.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>El Pie de Pagina</p>
+    </footer>
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+    <script src="./multi-pages.js"></script>
+</body>
+</html>
