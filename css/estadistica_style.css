@@ -43,6 +43,7 @@ header {
     min-width: 320px;
     height: 150px;
     text-align: center;
+    background-color: var(--secondary-blue);
 }
 
 /* AQUI COMIENZA */

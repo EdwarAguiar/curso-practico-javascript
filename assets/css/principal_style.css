@@ -37,19 +37,19 @@ html {
 #central-container {
     display: inline-block;
     background-color:white;
-    width: 65%;
+    width: 55%;
     height: 100%;
 }
 
 #right-container {
     display: inline-block;
     background-color:white;
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 
 #taller1, #taller2, #taller3 {
-    display: inline-block;
+    display: flex;
     color: var(--black);
     background-color: var(--secondary-blue);
     width: 100%;
@@ -59,7 +59,7 @@ html {
 }
 
 #taller4 {
-    display: inline-block;
+    display: flex;
     color: var(--black);
     background-color: var(--secondary-blue);
     width: 100%;
@@ -75,4 +75,74 @@ html {
     font-size: 5rem;
     font-weight: bold;
     line-height: 2.6rem;
+}
+
+#central--title2 {
+    padding-top: 100px;
+    padding-left: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1rem;
+}
+
+.central-parrafo {
+    padding-left: 75px;
+    padding-top: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    line-height: 0.1rem;
+}
+
+.alumno1 {
+    padding-top: 300px;
+    padding-left: 75px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    line-height: 0.1rem;
+}
+
+.alumno2 {
+    padding-top: 15px;
+    padding-left: 75px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    line-height: 0.1rem;
+}
+
+
+.titulo1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+.titulo2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    line-height: 2.6rem;
+}
+
+.logo {
+    padding: 30px 10px 10px 30px;
+    width: 90%;
+    height: 90%;
+}
+
+.titulo1, .titulo2 {
+    padding-top: 30px;
+}
+
+.parrafo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+}
+
+.logo-js {
+    /* position: absolute; */
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
 }

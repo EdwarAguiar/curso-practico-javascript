@@ -31,7 +31,7 @@ header {
     min-width: 320px;
     height: 150px;
     text-align: center;
-    background-color: var(--grey);
+    background-color: var(--secondary-blue);
 
 }
 
@@ -50,7 +50,7 @@ header {
     font-size: 5rem;
     font-weight: bold;
     line-height: 2.6rem;
-    color: var(--bitcoin-orange);
+    color: var(--black);
 }
 
 .header-title-container p {
@@ -89,14 +89,13 @@ main {
 
 
 .cuadrado-frame-container {
-
     width: 90%;
     min-width: 288px;
     max-width: 400px;
     height: 500px;
     margin: 5px auto;
     padding: 10px;
-    background-color: var(--off-white);
+    background-color: var(--soft-blue);
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
@@ -190,7 +189,7 @@ main {
     height: 500px;
     margin: 5px auto;
     padding: 10px;
-    background-color: var(--off-white);
+    background-color: var(--soft-blue);
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
@@ -361,7 +360,7 @@ main {
     height: 500px;
     margin: 5px auto;
     padding: 10px;
-    background-color: var(--off-white);
+    background-color: var(--soft-blue);
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
